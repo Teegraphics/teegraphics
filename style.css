@@ -28,6 +28,20 @@ a {
     justify-content: center;
 }
 
+.service-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: black;
+}
+
+.service-title span {
+    color: crimson;
+}
+
 /* Hero */
 
 #hero {
@@ -131,20 +145,6 @@ a {
     /* background-color: blue; */
 }
 
-#services .service-title {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 300;
-    letter-spacing: .2rem;
-    color: black;
-}
-
-#services .service-title span {
-    color: crimson;
-}
-
 #services .service-top p {
     letter-spacing: .05rem;
     font-size: 1.4rem;
@@ -174,19 +174,63 @@ a {
     background-size: cover;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
+#services .service-item h2 {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#services .service-item p {
+    color: white;
+    text-align: left;
+}
+
+
 #services .service-item::after {
-    position: absolute;
-    background-color: linear-gradient (black 0, blue 100%);
     content: '';
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .5;
     z-index: -1;
-    opacity: .8;
 }
+
+/* Project Section */
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .project-top h1 {
+    margin-bottom: 50px;
+}
+
+#projects .project-bottom {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .project-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 80%; */
+}
+
+#
 
 /* KeyFrames */
 
